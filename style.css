@@ -1,11 +1,54 @@
 /*Allgemein ab hier*/
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
+/*-----------------footer-----------------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 150px;
+}
+
+.infooter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.abhierbilder {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.yolulink {
+    text-decoration: none;
+    font-weight: 900;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #f1d564;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+}
+
+.yolulink:hover {
+    color: #ffffff;
+    background-color: #f1d5649b;
+}
+
+/*---------------------------------------*/
 
 .portfolio-container {
     max-width: 1070px;
@@ -14,28 +57,30 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
+
 }
 
 p {
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h2 {
     margin-top: 0;
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
+/* Grösse für abschintt */
+.abhierbilder {
+    font-size: 35px;
+}
+
 h1 {
     max-width: 1070px;
-    margin: auto;
     margin-top: 40px;
     padding: 20px;
     font-size: 500%;
-    font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
 }
@@ -79,7 +124,6 @@ h1 {
     border-radius: 10px;
     padding: 0px 15px;
     box-shadow: 0px 4px 10px 1px #ccc;
-
     transition: box-shadow 0.2s ease-in-out;
 }
 
@@ -189,6 +233,34 @@ h1 {
 
     h1 {
         max-width: 375px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .whowasit {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        text-align: center;
+
+    }
+
+    .abhierbilder2 {
+        display: none;
+    }
+
+    h2 {
+        margin-bottom: 0px;
     }
 }
 
